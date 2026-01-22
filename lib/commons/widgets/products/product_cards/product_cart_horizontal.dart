@@ -3,11 +3,11 @@ import 'package:flutter_e_commerce_app/commons/widgets/images/rounded_image.dart
 import 'package:flutter_e_commerce_app/commons/widgets/brand/brand_title.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/products/product_title.dart';
 import 'package:flutter_e_commerce_app/commons/styles/promo_slider.dart';
-import 'package:flutter_e_commerce_app/features/home/widgets/my_circulercontainer.dart';
-import 'package:flutter_e_commerce_app/features/shop/screens/product_details/product_details.dart';
+import 'package:flutter_e_commerce_app/features/home/views/widgets/my_circulercontainer.dart';
+import 'package:flutter_e_commerce_app/features/shop/views/product_details/product_details.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/icons/favourite_icon/favourite_icon.dart';
-import 'package:flutter_e_commerce_app/features/shop/controllers/product/product_controller.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/product_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/controllers/product_controller.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/product_model.dart';
 import 'package:flutter_e_commerce_app/utils/constants/color.dart';
 import 'package:flutter_e_commerce_app/utils/constants/enums.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';

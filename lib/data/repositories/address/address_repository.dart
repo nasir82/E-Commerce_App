@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_e_commerce_app/data/repositories/address/address_model.dart';
-import 'package:flutter_e_commerce_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:flutter_e_commerce_app/features/authentications/data/repository/authentication_repository.dart';
 import 'package:get/get.dart';
 
 class AddressRepository extends GetxController{

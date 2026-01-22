@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/custom_shapes/circle_icon.dart';
-import 'package:flutter_e_commerce_app/features/shop/controllers/favourite_controller/favourite_controller.dart';
+import 'package:flutter_e_commerce_app/features/shop/controllers/favourite_controller.dart';
 import 'package:flutter_e_commerce_app/utils/constants/color.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/features/home/widgets/my_circulercontainer.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/category_model.dart';
+import 'package:flutter_e_commerce_app/features/home/views/widgets/my_circulercontainer.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/category_model.dart';
 import 'package:flutter_e_commerce_app/features/store/controller/brand_controller.dart';
-import 'package:flutter_e_commerce_app/features/store/store.dart';
+import 'package:flutter_e_commerce_app/commons/widgets/brand/brand_showcase.dart';
 import 'package:flutter_e_commerce_app/utils/constants/color.dart';
 
 class CategoryBrands extends StatelessWidget {
@@ -17,15 +17,6 @@ class CategoryBrands extends StatelessWidget {
     return FutureBuilder(
         future: controller.getBrandsForCategory(category.id),
         builder: (context, snapshot) {
-          // const loader = Column(
-          //   children: [
-          //     //list tile shimmer
-
-          //     // size box
-
-          //     // box shimmer
-          //   ],
-          // );
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(
               child: CircularProgressIndicator(),

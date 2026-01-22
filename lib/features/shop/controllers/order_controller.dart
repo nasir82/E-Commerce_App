@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_e_commerce_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:flutter_e_commerce_app/features/authentications/data/repository/authentication_repository.dart';
 import 'package:flutter_e_commerce_app/data/repositories/order/order_repository.dart';
 import 'package:flutter_e_commerce_app/env/env.dart';
-import 'package:flutter_e_commerce_app/features/authentications/siginup/screens/succes_screen.dart';
+import 'package:flutter_e_commerce_app/features/authentications/views/succes_screen.dart';
 import 'package:flutter_e_commerce_app/features/personalizations/controllers/address_controller.dart';
 import 'package:flutter_e_commerce_app/features/shop/controllers/cart_controller.dart';
 import 'package:flutter_e_commerce_app/features/shop/controllers/checkout_controller.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/order_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/order_model.dart';
 import 'package:flutter_e_commerce_app/navigation/navigaton_menu.dart';
 import 'package:flutter_e_commerce_app/utils/constants/enums.dart';
 import 'package:flutter_e_commerce_app/utils/constants/image_strings.dart';

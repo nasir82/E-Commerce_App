@@ -24,18 +24,21 @@ class BrandTitleTextWithVerifiedIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        BrandTitleText(
-          title: title,
-          textColor: textColor,
-          maxLines: maxLines,
-          textAlign: textAlign,
-          textSize: textSize),
-          const SizedBox(width: Sizes.xs,),
-          Icon(Iconsax.verify5,color: iconColor,size: Sizes.iconxs,)
-          ],
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          BrandTitleText(
+            title: title,
+            textColor: textColor,
+            maxLines: maxLines,
+            textAlign: textAlign,
+            textSize: textSize),
+            const SizedBox(width: Sizes.xs,),
+            Icon(Iconsax.verify5,color: iconColor,size: Sizes.iconxs,)
+            ],
+      ),
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/images/rounded_image.dart';
-import 'package:flutter_e_commerce_app/features/home/widgets/my_circulercontainer.dart';
-import 'package:flutter_e_commerce_app/features/shop/controllers/banner_controller.dart';
+import 'package:flutter_e_commerce_app/features/home/views/widgets/my_circulercontainer.dart';
+import 'package:flutter_e_commerce_app/features/home/controller/banner_controller.dart';
 import 'package:flutter_e_commerce_app/utils/constants/color.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/shimmer/shimmer.dart';
@@ -61,7 +61,7 @@ class PromoSlider extends StatelessWidget {
 
 class ShadowStyleCustom {
   static final vericalProductShadow = BoxShadow(
-      color: MyColor.darkGrey.withOpacity(0.1),
+      color: MyColor.darkGrey.withValues( alpha: 0.1),
       blurRadius: 50,
       spreadRadius: 7,
       offset: const Offset(0, 2));

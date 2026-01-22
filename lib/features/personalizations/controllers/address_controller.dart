@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/data/repositories/address/address_model.dart';
 import 'package:flutter_e_commerce_app/data/repositories/address/address_repository.dart';
-import 'package:flutter_e_commerce_app/features/home/widgets/section_heading.dart';
-import 'package:flutter_e_commerce_app/features/personalizations/addresses/new_address.dart';
-import 'package:flutter_e_commerce_app/features/personalizations/addresses/single_address.dart';
+import 'package:flutter_e_commerce_app/commons/widgets/utils_widgets/section_heading.dart';
+import 'package:flutter_e_commerce_app/features/personalizations/views/new_address.dart';
+import 'package:flutter_e_commerce_app/features/personalizations/views/widgets/single_address.dart';
 import 'package:flutter_e_commerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/helpers/cloud_helper_functions.dart';
@@ -54,7 +54,7 @@ class AddressController extends GetxController {
       // set selected field true
       await addressRepo.updateSelectedField(selectedAddress.value.id, true);
     } catch (e) {
-      print(e.toString()+ "my message " + "${selectedAddress.value.id}");
+      print("${e}my message ${selectedAddress.value.id}");
       throw 'Unable to change your selection. Try again';
     }
   }
@@ -99,10 +99,9 @@ class AddressController extends GetxController {
     } catch (e) {
 
         FullScreenloader.stopLoading();
+        print(e.toString());
         throw 'Unable to save the address';
 
-    }finally{
-      
     }
   }
 

@@ -6,9 +6,9 @@ import 'package:iconsax/iconsax.dart';
 
 class Loaders{
 
-  static hideSnackBar() => ScaffoldMessenger.of(Get.context!).hideCurrentSnackBar();
+  static void hideSnackBar() => ScaffoldMessenger.of(Get.context!).hideCurrentSnackBar();
 
-    static customToast({required message}){
+    static void customToast({required message}){
         ScaffoldMessenger.of(Get.context!).showSnackBar(
             SnackBar(
               elevation: 0,
@@ -28,7 +28,7 @@ class Loaders{
         );
     }
 
-    static succesSnackbar({required title,message = '',duration=3}){
+    static void succesSnackbar({required title,message = '',duration=3}){
       Get.snackbar(
         title, 
         message,
@@ -42,7 +42,7 @@ class Loaders{
         icon: const Icon(Iconsax.check,color: Colors.white,)
       );
     }
-    static warnigSnackbar({required title,message = ''}){
+    static void warnigSnackbar({required title,message = ''}){
       Get.snackbar(
         title, 
         message,
@@ -56,7 +56,7 @@ class Loaders{
         icon: const Icon(Iconsax.warning_2,color: Colors.white,)
       );
     }
-    static errorSnackbar({required title,message = ''}){
+    static void errorSnackbar({required title,message = ''}){
       Get.snackbar(
         title, 
         message,

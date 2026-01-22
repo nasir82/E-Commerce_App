@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:flutter_e_commerce_app/features/authentications/data/repository/authentication_repository.dart';
 import 'package:flutter_e_commerce_app/data/repositories/user/user_repository.dart';
-import 'package:flutter_e_commerce_app/features/authentications/login/login.dart';
-import 'package:flutter_e_commerce_app/features/authentications/models/user_model.dart';
-import 'package:flutter_e_commerce_app/features/personalizations/screens/profile/re_authenticate_ui.dart';
+import 'package:flutter_e_commerce_app/features/authentications/views/login.dart';
+import 'package:flutter_e_commerce_app/features/authentications/data/models/user_model.dart';
+import 'package:flutter_e_commerce_app/features/personalizations/views/re_authenticate_ui.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/loader/loader.dart';
 import 'package:flutter_e_commerce_app/utils/popup/full_screenloader.dart';
@@ -30,9 +30,12 @@ class UserController extends GetxController {
 
   Future<void> fetchUserRecord() async {
     try {
+
       final user = await userRepository.fetchUserInfo();
       this.user(user);
+      this.user.refresh();
     } catch (e) {
+
       user(UserModel.empty());
     }
   }

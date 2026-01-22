@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter_e_commerce_app/data/repositories/authentication/authentication_repository.dart';
-import 'package:flutter_e_commerce_app/features/authentications/models/user_model.dart';
+import 'package:flutter_e_commerce_app/features/authentications/data/repository/authentication_repository.dart';
+import 'package:flutter_e_commerce_app/features/authentications/data/models/user_model.dart';
 import 'package:flutter_e_commerce_app/utils/exceptions/exceptions.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
@@ -23,6 +23,9 @@ class UserRepository extends GetxController {
   }
   Future<UserModel> fetchUserInfo() async {
     try {
+      if(AuthenticationRepository.instance.authUser == null){
+       print('Auth user is null in fetchUserInfo');
+      }
       final documentSnapshot =  await db.collection("Users").doc(AuthenticationRepository.instance.authUser!.uid).get();
       if(documentSnapshot.exists){
         return UserModel.fromSnapshot(documentSnapshot);

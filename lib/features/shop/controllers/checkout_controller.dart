@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/features/home/widgets/section_heading.dart';
-import 'package:flutter_e_commerce_app/features/shop/screens/checkout/widgets/billingpayment.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/payment_method_model.dart';
-import 'package:flutter_e_commerce_app/utils/constants/image_strings.dart';
+import 'package:flutter_e_commerce_app/commons/widgets/utils_widgets/section_heading.dart';
+import 'package:flutter_e_commerce_app/features/shop/views/checkout/widgets/billingpayment.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/payment_method_model.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 

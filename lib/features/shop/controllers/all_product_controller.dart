@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_e_commerce_app/data/repositories/product/product_repository.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/product_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/product_model.dart';
 import 'package:flutter_e_commerce_app/utils/loader/loader.dart';
 import 'package:get/get.dart';
 

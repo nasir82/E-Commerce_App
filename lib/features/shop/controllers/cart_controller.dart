@@ -1,10 +1,9 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_e_commerce_app/data/repositories/authentication/authentication_repository.dart';
-import 'package:flutter_e_commerce_app/features/shop/controllers/product/variation_controller.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/brand_model.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/cart_item_model.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/product_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/controllers/variation_controller.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/brand_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/cart_item_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/product_model.dart';
 import 'package:flutter_e_commerce_app/utils/constants/enums.dart';
 import 'package:flutter_e_commerce_app/utils/loader/loader.dart';
 import 'package:flutter_e_commerce_app/utils/local_storage/local_storage.dart';

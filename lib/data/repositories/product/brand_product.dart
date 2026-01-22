@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/appbar/appbar.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/products/sortable_product.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/brand_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/brand_model.dart';
 import 'package:flutter_e_commerce_app/features/store/controller/brand_controller.dart';
-import 'package:flutter_e_commerce_app/features/store/store.dart';
+import 'package:flutter_e_commerce_app/commons/widgets/brand/brand_card.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 
 class BrandProducts extends StatelessWidget {

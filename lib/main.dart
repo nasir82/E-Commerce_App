@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/app.dart';
-import 'package:flutter_e_commerce_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:flutter_e_commerce_app/features/authentications/data/repository/authentication_repository.dart';
 import 'package:flutter_e_commerce_app/firebase_options.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';

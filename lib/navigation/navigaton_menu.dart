@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/features/home/home.dart';
+import 'package:flutter_e_commerce_app/features/home/views/home.dart';
 import 'package:flutter_e_commerce_app/features/store/store.dart';
-import 'package:flutter_e_commerce_app/features/shop/screens/wish_list/wish_list.dart';
-import 'package:flutter_e_commerce_app/features/personalizations/screens/settings/settings.dart';
+import 'package:flutter_e_commerce_app/features/shop/views/wish_list/wish_list.dart';
+import 'package:flutter_e_commerce_app/features/personalizations/views/settings.dart';
 import 'package:flutter_e_commerce_app/utils/constants/color.dart';
 import 'package:flutter_e_commerce_app/utils/helpers/helper_funtions.dart';
 import 'package:get/get.dart';

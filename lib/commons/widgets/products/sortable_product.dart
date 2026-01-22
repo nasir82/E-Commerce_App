@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/layouts/grid_layout.dart';
 import 'package:flutter_e_commerce_app/commons/widgets/products/product_cards/product_cartvertical.dart';
 import 'package:flutter_e_commerce_app/features/shop/controllers/all_product_controller.dart';
-import 'package:flutter_e_commerce_app/features/shop/models/product_model.dart';
+import 'package:flutter_e_commerce_app/features/shop/data/models/product_model.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -20,7 +20,7 @@ class SortableProduct extends StatelessWidget {
       children: [
         DropdownButtonFormField(
             decoration: const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
-            value: controller.selectedOption.value,
+            initialValue: controller.selectedOption.value,
             onChanged: (value) {
               controller.selectedOption.value = value!;
               controller.sortProducts(value);

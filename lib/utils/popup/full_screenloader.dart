@@ -24,7 +24,7 @@ class FullScreenloader {
       )));
   }
 
-  static stopLoading(){
+  static void stopLoading(){
     print("############################################\n stop called\n ###################");
     Navigator.of(Get.overlayContext!).pop();
   }
