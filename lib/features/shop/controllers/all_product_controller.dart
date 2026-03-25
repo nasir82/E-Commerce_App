@@ -15,7 +15,7 @@ class AllProductController extends GetxController {
     try {
       if (query == null) return [];
       final prod = await repository.getProductByQuery(query);
-      print("############## fetch products $prod");
+      print("##############\n\n fetch products $prod");
       return prod;
     } catch (e) {
       Loaders.errorSnackbar(title: "Oh chorry", message: e.toString());

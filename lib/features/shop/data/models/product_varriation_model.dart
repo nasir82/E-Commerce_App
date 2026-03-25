@@ -47,4 +47,8 @@ class ProductVarriationModel {
         image: data['Image'] ?? '',
         attributeValues: Map<String, String>.from(data['AttributeValues']));
   }
+  @override
+  String toString() {
+    return 'ProductVarriationModel{id: $id, sku: $sku, image: $image, description: $description, price: $price, salePrice: $salePrice, stock: $stock, attributeValues: $attributeValues}';
+  }
 }

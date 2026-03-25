@@ -108,4 +108,9 @@ class ProductModel {
     
     );
   }
+
+  @override
+  toString() {
+    return 'ProductModel{id: $id, stock: $stock, sku: $sku, price: $price, title: $title, date: $date, salePrice: $salePrice, thumbnail: $thumbnail, isFeatured: $isFeatured, brand: $brand, description: $description, categoryId: $categoryId, images: $images, productType: $productType, productAttributes: $productAttributes, productVariations: $productVariations}';
+  }
 }

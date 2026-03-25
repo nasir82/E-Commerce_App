@@ -24,4 +24,9 @@ class ProductAttributeModel{
 
     );
    }
+
+   @override 
+    String toString() {
+      return 'ProductAttributeModel{name: $name, values: $values}';
+    }
 }

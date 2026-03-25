@@ -54,7 +54,9 @@ class ProductDetailsScreen extends StatelessWidget {
                   SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {}, child: const Text("Checkout"))),
+                          onPressed: () {
+                            print(product);
+                          }, child: const Text("Checkout"))),
                   const SizedBox(
                     height: Sizes.spaceBtwSections,
                   ),

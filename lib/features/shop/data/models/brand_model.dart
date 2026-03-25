@@ -60,6 +60,10 @@ class BrandModel {
       return BrandModel.empty();
     }
   }
+  @override
+  String toString() {
+    return 'BrandModel{id: $id, name: $name, image: $image, isFeatured: $isFeatured, productCount: $productCount}';
+  }
 }
 
 List<ProductModel> products = [
